@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1\bin\Debug\Tarea1.exe">
+   <Modules>
+    <Module Name="tarea1.exe">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Firme 'Tarea1.exe' con una clave de nombre seguro.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">Marque 'Tarea1.exe' con CLSCompliant(true) porque expone tipos visibles externamente.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="Tarea1">
+       <Types>
+        <Type Name="Game" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CheckWinner()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String)" TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="399">El método 'Game.CheckWinner()' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.WriteLine(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Empate".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="413">El método 'Game.CheckWinner()' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.WriteLine(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Has ganado la partida!".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="393">El método 'Game.CheckWinner()' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.WriteLine(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Has ganado la partida".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="405">El método 'Game.CheckWinner()' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.WriteLine(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Has perdido la partida".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="419">El método 'Game.CheckWinner()' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.WriteLine(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Has perdido la partida".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="390">El método 'Game.CheckWinner()' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.WriteLine(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Jugador no puede mover mas piezas, se procederá a contar piezas.".</Issue>
+            </Message>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="395">El método 'Game.CheckWinner()' pasa una cadena literal como parámetro 'format' de una llamada a 'Console.WriteLine(string, object)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Piezas Cpu: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="401">El método 'Game.CheckWinner()' pasa una cadena literal como parámetro 'format' de una llamada a 'Console.WriteLine(string, object)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Piezas Cpu: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="407">El método 'Game.CheckWinner()' pasa una cadena literal como parámetro 'format' de una llamada a 'Console.WriteLine(string, object)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Piezas Cpu: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="394">El método 'Game.CheckWinner()' pasa una cadena literal como parámetro 'format' de una llamada a 'Console.WriteLine(string, object)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Piezas Jugador: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="400">El método 'Game.CheckWinner()' pasa una cadena literal como parámetro 'format' de una llamada a 'Console.WriteLine(string, object)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Piezas Jugador: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="406">El método 'Game.CheckWinner()' pasa una cadena literal como parámetro 'format' de una llamada a 'Console.WriteLine(string, object)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Piezas Jugador: ".</Issue>
+            </Message>
+            <Message TypeName="Proporcionar argumentos correctos a los métodos de formato" Category="Microsoft.Usage" CheckId="CA2241" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Name="MissingFormatItem" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="395">El método 'Game.CheckWinner()' llama a 'Console.WriteLine(string, object)' y no proporciona un elemento de formato para el argumento "1". La cadena de formato proporcionada es: '"Piezas Cpu: "'</Issue>
+             <Issue Name="MissingFormatItem" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="401">El método 'Game.CheckWinner()' llama a 'Console.WriteLine(string, object)' y no proporciona un elemento de formato para el argumento "1". La cadena de formato proporcionada es: '"Piezas Cpu: "'</Issue>
+             <Issue Name="MissingFormatItem" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="407">El método 'Game.CheckWinner()' llama a 'Console.WriteLine(string, object)' y no proporciona un elemento de formato para el argumento "1". La cadena de formato proporcionada es: '"Piezas Cpu: "'</Issue>
+             <Issue Name="MissingFormatItem" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="394">El método 'Game.CheckWinner()' llama a 'Console.WriteLine(string, object)' y no proporciona un elemento de formato para el argumento "1". La cadena de formato proporcionada es: '"Piezas Jugador: "'</Issue>
+             <Issue Name="MissingFormatItem" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="400">El método 'Game.CheckWinner()' llama a 'Console.WriteLine(string, object)' y no proporciona un elemento de formato para el argumento "1". La cadena de formato proporcionada es: '"Piezas Jugador: "'</Issue>
+             <Issue Name="MissingFormatItem" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="406">El método 'Game.CheckWinner()' llama a 'Console.WriteLine(string, object)' y no proporciona un elemento de formato para el argumento "1". La cadena de formato proporcionada es: '"Piezas Jugador: "'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EatToken(Tarea1.GameBoard)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String)" TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="327">El método 'Game.EatToken(GameBoard)' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.WriteLine(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "COMER".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="340">El método 'Game.EatToken(GameBoard)' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.WriteLine(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Pieza capturada: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="347">El método 'Game.EatToken(GameBoard)' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.WriteLine(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Pieza capturada: ".</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="329">En el método 'Game.EatToken(GameBoard)' visible externamente, valide el parámetro 'gameBoard' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EatTokenCpu(Tarea1.GameBoard)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String)" TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="379">El método 'Game.EatTokenCpu(GameBoard)' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.WriteLine(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "-------------------------".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="358">El método 'Game.EatTokenCpu(GameBoard)' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.WriteLine(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "COMER".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="367">El método 'Game.EatTokenCpu(GameBoard)' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.WriteLine(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Has perdido la pieza: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="374">El método 'Game.EatTokenCpu(GameBoard)' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.WriteLine(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Has perdido la pieza: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="380">El método 'Game.EatTokenCpu(GameBoard)' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.WriteLine(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Jugada de la computadora".</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="362">En el método 'Game.EatTokenCpu(GameBoard)' visible externamente, valide el parámetro 'gameBoard' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MoveCpu(Tarea1.GameBoard)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String)" TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="317">El método 'Game.MoveCpu(GameBoard)' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.WriteLine(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "-------------------------".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="318">El método 'Game.MoveCpu(GameBoard)' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.WriteLine(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Jugada de la computadora".</Issue>
+            </Message>
+            <Message Id="0" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="316">En el método 'Game.MoveCpu(GameBoard)' visible externamente, valide el parámetro 'gameBoard' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MovePlayer(Tarea1.GameBoard)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="302">En el método 'Game.MovePlayer(GameBoard)' visible externamente, valide el parámetro 'gameBoard' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Play(Tarea1.GameBoard,Tarea1.Input)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Console.WriteLine(System.String)" TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="286">El método 'Game.Play(GameBoard, Input)' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.WriteLine(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Si es posible".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="268">El método 'Game.Play(GameBoard, Input)' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.WriteLine(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Sus fichas son las O y del computador las X".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="283">El método 'Game.Play(GameBoard, Input)' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.WriteLine(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Verificando si puede comer nuevamente..".</Issue>
+            </Message>
+            <Message Id="1" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="274">En el método 'Game.Play(GameBoard, Input)' visible externamente, valide el parámetro 'input' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VerifyEatValidationsCpu(Tarea1.GameBoard)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="438">En el método 'Game.VerifyEatValidationsCpu(GameBoard)' visible externamente, valide el parámetro 'gameBoard' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VerifyEatValidationsPlayer(Tarea1.GameBoard)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="426">En el método 'Game.VerifyEatValidationsPlayer(GameBoard)' visible externamente, valide el parámetro 'gameBoard' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VerifyMovementValidationsCpu(Tarea1.GameBoard)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="462">En el método 'Game.VerifyMovementValidationsCpu(GameBoard)' visible externamente, valide el parámetro 'gameBoard' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VerifyMovementValidationsPlayer(Tarea1.GameBoard)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Game.cs" Line="450">En el método 'Game.VerifyMovementValidationsPlayer(GameBoard)' visible externamente, valide el parámetro 'gameBoard' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GameBoard" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#board" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="Member" TypeName="PreferJaggedArraysOverMultidimensional" Category="Microsoft.Performance" CheckId="CA1814" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="Breaking">
+             <Issue Certainty="25" Level="Warning">'GameBoard.board' es una matriz multidimensional. Reemplácelo por una matriz escalonada si es posible.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Board" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Member" TypeName="PreferJaggedArraysOverMultidimensional" Category="Microsoft.Performance" CheckId="CA1814" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="Breaking">
+             <Issue Certainty="25" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="38">'GameBoard.Board' es una matriz multidimensional. Reemplácelo por una matriz escalonada si es posible.</Issue>
+            </Message>
+            <Message TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="38">Cambie 'GameBoard.Board' para que devuelva una colección o conviértalo en un método.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateEvenBoard(System.Int32,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="columns" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="143">'columns', un parámetro declarado en 'GameBoard.CreateEvenBoard(int, int)', tiene el mismo nombre que el campo de instancia en el tipo. Cambie el nombre de uno de estos elementos.</Issue>
+            </Message>
+            <Message Id="rows" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="143">'rows', un parámetro declarado en 'GameBoard.CreateEvenBoard(int, int)', tiene el mismo nombre que el campo de instancia en el tipo. Cambie el nombre de uno de estos elementos.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateGameBoard()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Console.Write(System.String)" TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="179">El método 'GameBoard.CreateGameBoard()' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.Write(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Ingrese numero de columnas: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="186">El método 'GameBoard.CreateGameBoard()' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.Write(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Ingrese numero de filas: ".</Issue>
+            </Message>
+            <Message Id="System.Console.WriteLine(System.String)" TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="183">El método 'GameBoard.CreateGameBoard()' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.WriteLine(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Debe ingresar un numero".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="190">El método 'GameBoard.CreateGameBoard()' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.WriteLine(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Debe ingresar un numero".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="177">El método 'GameBoard.CreateGameBoard()' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.WriteLine(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Selección de tamaño de tablero (Máximo 26x26)".</Issue>
+            </Message>
+            <Message Id="Body" TypeName="PreferJaggedArraysOverMultidimensional" Category="Microsoft.Performance" CheckId="CA1814" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="Breaking">
+             <Issue Name="Body" Certainty="25" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="195">'GameBoard.CreateGameBoard()' usa una matriz multidimensional de 'string[,]'. Reemplácelo por una matriz escalonada si es posible.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateOddBoard(System.Int32,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="columns" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="160">'columns', un parámetro declarado en 'GameBoard.CreateOddBoard(int, int)', tiene el mismo nombre que el campo de instancia en el tipo. Cambie el nombre de uno de estos elementos.</Issue>
+            </Message>
+            <Message Id="rows" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="160">'rows', un parámetro declarado en 'GameBoard.CreateOddBoard(int, int)', tiene el mismo nombre que el campo de instancia en el tipo. Cambie el nombre de uno de estos elementos.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DisplayGameBoard()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Console.Write(System.String)" TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="210">El método 'GameBoard.DisplayGameBoard()' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.Write(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "    ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="214">El método 'GameBoard.DisplayGameBoard()' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.Write(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "  ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="224">El método 'GameBoard.DisplayGameBoard()' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.Write(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: " |".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="226">El método 'GameBoard.DisplayGameBoard()' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.Write(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: " |".</Issue>
+            </Message>
+            <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="210">Puesto que el comportamiento de 'string.Format(string, object)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'GameBoard.DisplayGameBoard()' por una llamada a 'string.Format(IFormatProvider, string, params object[])'. Si el resultado de 'string.Format(IFormatProvider, string, params object[])' se mostrará al usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="214">Puesto que el comportamiento de 'string.Format(string, object)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'GameBoard.DisplayGameBoard()' por una llamada a 'string.Format(IFormatProvider, string, params object[])'. Si el resultado de 'string.Format(IFormatProvider, string, params object[])' se mostrará al usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="220">Puesto que el comportamiento de 'string.Format(string, object)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'GameBoard.DisplayGameBoard()' por una llamada a 'string.Format(IFormatProvider, string, params object[])'. Si el resultado de 'string.Format(IFormatProvider, string, params object[])' se mostrará al usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="224">Puesto que el comportamiento de 'string.Format(string, object)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'GameBoard.DisplayGameBoard()' por una llamada a 'string.Format(IFormatProvider, string, params object[])'. Si el resultado de 'string.Format(IFormatProvider, string, params object[])' se mostrará al usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Letters" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="103">Cambie 'GameBoard.Letters' para que sea de solo lectura quitando el establecedor de propiedades.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="103">Cambie ''List&lt;string&gt;'' en 'GameBoard.Letters' para que use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; o KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Numbers" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="51">Cambie 'GameBoard.Numbers' para que sea de solo lectura quitando el establecedor de propiedades.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="51">Cambie ''List&lt;int&gt;'' en 'GameBoard.Numbers' para que use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; o KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateGameBoard(System.Int32,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Console.Write(System.String)" TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="232">El método 'GameBoard.UpdateGameBoard(int, int)' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.Write(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "    ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="236">El método 'GameBoard.UpdateGameBoard(int, int)' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.Write(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "  ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="245">El método 'GameBoard.UpdateGameBoard(int, int)' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.Write(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: " |".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="247">El método 'GameBoard.UpdateGameBoard(int, int)' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.Write(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: " |".</Issue>
+            </Message>
+            <Message Id="System.String.Format(System.String,System.Object)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="232">Puesto que el comportamiento de 'string.Format(string, object)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'GameBoard.UpdateGameBoard(int, int)' por una llamada a 'string.Format(IFormatProvider, string, params object[])'. Si el resultado de 'string.Format(IFormatProvider, string, params object[])' se mostrará al usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="236">Puesto que el comportamiento de 'string.Format(string, object)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'GameBoard.UpdateGameBoard(int, int)' por una llamada a 'string.Format(IFormatProvider, string, params object[])'. Si el resultado de 'string.Format(IFormatProvider, string, params object[])' se mostrará al usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="241">Puesto que el comportamiento de 'string.Format(string, object)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'GameBoard.UpdateGameBoard(int, int)' por una llamada a 'string.Format(IFormatProvider, string, params object[])'. Si el resultado de 'string.Format(IFormatProvider, string, params object[])' se mostrará al usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="GameBoard.cs" Line="245">Puesto que el comportamiento de 'string.Format(string, object)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'GameBoard.UpdateGameBoard(int, int)' por una llamada a 'string.Format(IFormatProvider, string, params object[])'. Si el resultado de 'string.Format(IFormatProvider, string, params object[])' se mostrará al usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Input" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CpuInput(Tarea1.GameBoard,Tarea1.Game)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="1" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Input.cs" Line="100">En el método 'Input.CpuInput(GameBoard, Game)' visible externamente, valide el parámetro 'game' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DestinationTokenPlayer(Tarea1.GameBoard,Tarea1.Game)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Input.cs" Line="60">El parámetro 'this' (o 'Me' en Visual Basic) de 'Input.DestinationTokenPlayer(GameBoard, Game)' no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Issue>
+            </Message>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Input.cs" Line="71">Puesto que el comportamiento de 'int.Parse(string)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'Input.DestinationTokenPlayer(GameBoard, Game)' por una llamada a 'int.Parse(string, IFormatProvider)'. Si el resultado de 'int.Parse(string, IFormatProvider)' estará basado en los datos proporcionados por el usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado estará basado en datos almacenados a los que tiene acceso el software, como cuando se cargan desde un disco o una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="1" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Input.cs" Line="63">En el método 'Input.DestinationTokenPlayer(GameBoard, Game)' visible externamente, valide el parámetro 'game' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SelectTokenPlayer(Tarea1.GameBoard,Tarea1.Game)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Console.Write(System.String)" TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Input.cs" Line="19">El método 'Input.SelectTokenPlayer(GameBoard, Game)' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.Write(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Escriba la posición de la ficha que desea mover: ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Input.cs" Line="44">El método 'Input.SelectTokenPlayer(GameBoard, Game)' pasa una cadena literal como parámetro 'value' de una llamada a 'Console.Write(string)'. En su lugar, recupere las siguientes cadenas de una tabla de recursos: "Pieza seleccionada correctamente, donde desea moverla? ".</Issue>
+            </Message>
+            <Message Id="System.Int32.Parse(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternate" Certainty="95" Level="Error" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Input.cs" Line="30">Puesto que el comportamiento de 'int.Parse(string)' podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en 'Input.SelectTokenPlayer(GameBoard, Game)' por una llamada a 'int.Parse(string, IFormatProvider)'. Si el resultado de 'int.Parse(string, IFormatProvider)' estará basado en los datos proporcionados por el usuario, especifique 'CultureInfo.CurrentCulture' como parámetro 'IFormatProvider'. De lo contrario, si el resultado estará basado en datos almacenados a los que tiene acceso el software, como cuando se cargan desde un disco o una base de datos, especifique 'CultureInfo.InvariantCulture'.</Issue>
+            </Message>
+            <Message Id="1" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Input.cs" Line="20">En el método 'Input.SelectTokenPlayer(GameBoard, Game)' visible externamente, valide el parámetro 'game' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="InvalidDestinationException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Agregue el siguiente constructor a 'InvalidDestinationException': protected InvalidDestinationException(SerializationInfo, StreamingContext).</Issue>
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Agregue el siguiente constructor a 'InvalidDestinationException': public InvalidDestinationException(String).</Issue>
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Agregue el siguiente constructor a 'InvalidDestinationException': public InvalidDestinationException(String, Exception).</Issue>
+          </Message>
+          <Message TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="NonBreaking">
+           <Issue Certainty="95" Level="Error">Agregue [Serializable] a 'InvalidDestinationException', ya que este tipo implementa ISerializable.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="InvalidPositionException" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="NonBreaking">
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Agregue el siguiente constructor a 'InvalidPositionException': protected InvalidPositionException(SerializationInfo, StreamingContext).</Issue>
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Agregue el siguiente constructor a 'InvalidPositionException': public InvalidPositionException(String).</Issue>
+           <Issue Name="MissingConstructor" Certainty="95" Level="Error">Agregue el siguiente constructor a 'InvalidPositionException': public InvalidPositionException(String, Exception).</Issue>
+          </Message>
+          <Message TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="NonBreaking">
+           <Issue Certainty="95" Level="Error">Agregue [Serializable] a 'InvalidPositionException', ya que este tipo implementa ISerializable.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Program" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Main(System.String[])" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="args" TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Program.cs" Line="12">Nunca se usa el parámetro 'args' de 'Program.Main(string[])'. Quite el parámetro o utilícelo en el cuerpo del método.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Token" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CreateAllPositions(Tarea1.GameBoard)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Token.cs" Line="137">En el método 'Token.CreateAllPositions(GameBoard)' visible externamente, valide el parámetro 'gameBoard' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateOTokens(Tarea1.GameBoard)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Token.cs" Line="97">En el método 'Token.CreateOTokens(GameBoard)' visible externamente, valide el parámetro 'gameBoard' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateXTokens(Tarea1.GameBoard)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="0" TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Token.cs" Line="119">En el método 'Token.CreateXTokens(GameBoard)' visible externamente, valide el parámetro 'gameBoard' antes de usarlo.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OTokens" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Token.cs" Line="46">Cambie 'Token.OTokens' para que sea de solo lectura quitando el establecedor de propiedades.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Token.cs" Line="46">Cambie ''List&lt;string&gt;'' en 'Token.OTokens' para que use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; o KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OTokensDeleted" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Token.cs" Line="85">Cambie 'Token.OTokensDeleted' para que sea de solo lectura quitando el establecedor de propiedades.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Token.cs" Line="85">Cambie ''List&lt;string&gt;'' en 'Token.OTokensDeleted' para que use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; o KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Positions" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Token.cs" Line="33">Cambie 'Token.Positions' para que sea de solo lectura quitando el establecedor de propiedades.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Token.cs" Line="33">Cambie ''List&lt;string&gt;'' en 'Token.Positions' para que use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; o KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#XTokens" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Token.cs" Line="59">Cambie 'Token.XTokens' para que sea de solo lectura quitando el establecedor de propiedades.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Token.cs" Line="59">Cambie ''List&lt;string&gt;'' en 'Token.XTokens' para que use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; o KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#XTokensDeleted" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="Breaking">
+             <Issue Certainty="75" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Token.cs" Line="72">Cambie 'Token.XTokensDeleted' para que sea de solo lectura quitando el establecedor de propiedades.</Issue>
+            </Message>
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Token.cs" Line="72">Cambie ''List&lt;string&gt;'' en 'Token.XTokensDeleted' para que use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; o KeyedCollection&lt;K,V&gt;</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Utility" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ConvertLetterToNumber(System.Char)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Utility.cs" Line="35">'Utility.ConvertLetterToNumber(char)' tiene una complejidad ciclomática de 27. Vuelva a escribir o refactorice el método para reducir la complejidad a 25.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ConvertNumberToLetter(System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502" Status="Active" Created="2018-07-02 03:38:04Z" FixCategory="NonBreaking">
+             <Issue Certainty="90" Level="Warning" Path="C:\Users\Diego Tarud\Desktop\tarea3\Tarea1" File="Utility.cs" Line="95">'Utility.ConvertNumberToLetter(int)' tiene una complejidad ciclomática de 27. Vuelva a escribir o refactorice el método para reducir la complejidad a 25.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Los ensamblados deben tener nombres seguros válidos</Name>
+   <Description>Puede que el ensamblado no tenga un nombre seguro, que no sea válido o que éste sea válido únicamente por la configuración del equipo. No se puede implementar el ensamblado en este estado. Las causas más probables son: 1) El contenido del ensamblado se modificó después de firmarlo. 2) Error en el proceso de firma. 3) El ensamblado tenía firma retardada. 4) Existía una clave del Registro que permitió que se realizara la comprobación (de lo contrario no se hubiera realizado).</Description>
+   <Resolution Name="NoStrongName">Firme {0} con una clave de nombre seguro.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502">
+   <Name>Evite la excesiva complejidad</Name>
+   <Description>Las implementaciones de método que son excesivamente complejas aumentan el reto de comprender y mantener el código.</Description>
+   <Resolution Name="Default">{0} tiene una complejidad ciclomática de {1}. Vuelva a escribir o refactorice el método para reducir la complejidad a {2}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182212.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="maintainabilityrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227">
+   <Name>Las propiedades de la colección deben ser de solo lectura</Name>
+   <Description>Las propiedades que devuelven colecciones deben ser de solo lectura para que los usuarios no reemplacen totalmente la memoria auxiliar. Los usuarios podrán modificar todavía el contenido de la colección llamando a métodos relevantes en la colección. Tenga en cuenta que la clase XmlSerializer tiene compatibilidad especial para deserializar las colecciones de solo lectura. Consulte la información general de XmlSerializer para obtener más información.</Description>
+   <Resolution Name="Default">Cambie {0} para que sea de solo lectura quitando el establecedor de propiedades.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182327.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002">
+   <Name>No exponer listas genéricas</Name>
+   <Description>No exponga List&lt;T&gt; en modelos de objetos. Utilice Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; o KeyedCollection&lt;K,V&gt; en su lugar. Debe utilizar List&lt;T&gt; desde la implementación, no en la API de modelo de objetos. List&lt;T&gt; está optimizado para el rendimiento de versiones a largo plazo. Por ejemplo, si devuelve List&lt;T&gt; al código del cliente, no podrá recibir notificaciones cuando el código del cliente modifique la colección.</Description>
+   <Resolution Name="Default">Cambie '{0}' en {1} para que use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; o KeyedCollection&lt;K,V&gt;</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182142.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="ImplementStandardExceptionConstructors" Category="Microsoft.Design" CheckId="CA1032">
+   <Name>Implementar constructores de excepción estándar</Name>
+   <Description>Se requieren varios constructores para implementar correctamente una excepción personalizada. Los constructores que faltan pueden dejar inutilizable la excepción en algunos escenarios. Por ejemplo, el constructor de serialización es necesario para administrar excepciones en los servicios Web XML.</Description>
+   <Resolution Name="MissingConstructor">Agregue el siguiente constructor a {0}: {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182151.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>Marque los ensamblados con CLSCompliantAttribute</Name>
+   <Description>Los ensamblados deben establecer explícitamente ser conformes a CLS usando el atributo CLSCompliant. Un ensamblado sin este atributo no es conforme a CLS. Los ensamblados, módulos y tipos pueden ser conformes a CLS incluso si alguna parte del ensamblado, módulo o tipo no son conformes a CLS. Se aplican las siguientes reglas: 1) Si el elemento está marcado como CLSCompliant, cualquier miembro no compatible debe tener el atributo CLSCompliant presente con el argumento establecido como false. 2) Se debe proporcionar un miembro alternativo conforme a CLS comparable con cada miembro que no sea conforme a CLS.</Description>
+   <Resolution Name="Default">Marque {0} con CLSCompliant(true) porque expone tipos visibles externamente.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182156.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkISerializableTypesWithSerializable" Category="Microsoft.Usage" CheckId="CA2237">
+   <Name>Marcar los tipos ISerializable con SerializableAttribute</Name>
+   <Description>La interfaz System.Runtime.Serialization.ISerializable permite al tipo personalizar su serialización, mientras que el atributo Serializable permite al runtime reconocer el tipo como serializable.</Description>
+   <Resolution Name="Default">Agregue [Serializable] a {0}, ya que este tipo implementa ISerializable.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182350.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>Marcar el miembro como estático</Name>
+   <Description>Los métodos que no tienen acceso a los datos de instancias o a los métodos de instancias de llamadas se pueden marcar como estáticos (compartidos en VB). Después de esto, el compilador emitirá sitios de llamadas no virtuales para estos miembros, lo que impedirá la comprobación en tiempo de ejecución de cada llamada que garantice que el puntero del objeto actual no es nulo. Esto puede dar lugar a un mejor rendimiento en el código sensible al rendimiento. En algunos casos, la imposibilidad de tener acceso a la instancia del objeto actual representa un problema de corrección.</Description>
+   <Resolution Name="Default">El parámetro 'this' (o 'Me' en Visual Basic) de {0} no se usa nunca. Marque el miembro como static (o Shared en Visual Basic) o use 'this'/'Me' en el cuerpo del método o al menos un descriptor de acceso de la propiedad, si procede.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245046.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="No pasar cadenas literal como parámetros localizados" Category="Microsoft.Globalization" CheckId="CA1303">
+   <Name>No pasar cadenas literal como parámetros localizados</Name>
+   <Description>Las cadenas de tipo literal incrustadas en el código fuente son difíciles de localizar. Evite pasar cadenas literal como argumentos en circunstancias donde, por lo general, se espera una cadena localizada.</Description>
+   <Resolution Name="KnownValue">El método {0} pasa una cadena literal como parámetro '{1}' de una llamada a {2}. En su lugar, recupere las siguientes cadenas de una tabla de recursos: {3}.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182187.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="PreferJaggedArraysOverMultidimensional" Category="Microsoft.Performance" CheckId="CA1814">
+   <Name>Preferir las matrices escalonadas antes que multidimensionales</Name>
+   <Description>Las matrices multidimensionales pueden tener un impacto negativo en el rendimiento. Use una matriz escalonada si es posible.</Description>
+   <Resolution Name="Body">{0} usa una matriz multidimensional de {1}. Reemplácelo por una matriz escalonada si es posible.</Resolution>
+   <Resolution Name="Default">{0} es una matriz multidimensional. Reemplácelo por una matriz escalonada si es posible.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182277.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="25">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="PropertiesShouldNotReturnArrays" Category="Microsoft.Performance" CheckId="CA1819">
+   <Name>Las propiedades no deberían devolver matrices</Name>
+   <Description>Las propiedades que devuelven matrices suelen codificar ineficiencias. Es aconsejable utilizar una colección o convertir esto en un método. Consulte las pautas de diseño para obtener más información.</Description>
+   <Resolution Name="Default">Cambie {0} para que devuelva una colección o conviértalo en un método.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/0fss9skc.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="Proporcionar argumentos correctos a los métodos de formato" Category="Microsoft.Usage" CheckId="CA2241">
+   <Name>Proporcionar argumentos correctos a los métodos de formato</Name>
+   <Description>Proporcione el número correcto de argumentos a las llamadas a String.Format.</Description>
+   <Resolution Name="MissingFormatItem">El método {0} llama a {1} y no proporciona un elemento de formato para el argumento {2}. La cadena de formato proporcionada es: '{3}'</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182361.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="ReviewUnusedParameters" Category="Microsoft.Usage" CheckId="CA1801">
+   <Name>Revisar parámetros sin utilizar</Name>
+   <Description>Revise los parámetros de los métodos no virtuales que no se usan en el cuerpo del método para asegurar que no existe corrección al error de acceso a los mismos. Los parámetros sin usar conllevan un costo por mantenimiento y rendimiento. Algunas veces la infracción de esta regla puede señalar un error de implementación en el método (por ejemplo el parámetro debe haberse usado en el cuerpo del método). Excluya las advertencias de esta regla si el parámetro debe existir por compatibilidad con versiones anteriores.</Description>
+   <Resolution Name="Default">Nunca se usa el parámetro {0} de {1}. Quite el parámetro o utilícelo en el cuerpo del método.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182268.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>Especificar IFormatProvider</Name>
+   <Description>Si existe una sobrecarga que toma un argumento IFormatProvider, se debe llamar siempre en favor de una sobrecarga que no lo haga. Algunos métodos del runtime convierten un valor a o desde una representación de cadena y toman un parámetro de cadena que contiene uno o varios caracteres, denominados especificadores de formato, que indican cómo se debe convertir el valor. Si el significado del especificador de formato varía por referencia cultural, un objeto de formato proporciona los caracteres usados en la representación de cadena. En escenarios donde el comportamiento de ordenación y comparación no debería cambiar nunca entre referecias culturales, especifique CultureInfo.InvariantCulture; de lo contrario, especifique CultureInfo.CurrentCulture.</Description>
+   <Resolution Name="IFormatProviderAlternate">Puesto que el comportamiento de {0} podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en {1} por una llamada a {2}. Si el resultado de {2} estará basado en los datos proporcionados por el usuario, especifique {3} como parámetro 'IFormatProvider'. De lo contrario, si el resultado estará basado en datos almacenados a los que tiene acceso el software, como cuando se cargan desde un disco o una base de datos, especifique {4}.</Resolution>
+   <Resolution Name="IFormatProviderAlternateString">Puesto que el comportamiento de {0} podría variar en función de la configuración regional del usuario actual, reemplace esta llamada en {1} por una llamada a {2}. Si el resultado de {2} se mostrará al usuario, especifique {3} como parámetro 'IFormatProvider'. De lo contrario, si el resultado se almacenará y será el software quien tenga acceso a él, como cuando se almacena en un disco o en una base de datos, especifique {4}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182190.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="Validar argumentos de métodos públicos" Category="Microsoft.Design" CheckId="CA1062">
+   <Name>Validar argumentos de métodos públicos</Name>
+   <Description>Todos los argumentos de referencia pasados a métodos visibles externamente deben comprobarse para ver si son NULL (Nothing en VB). Si procede, produzca una excepción System.ArgumentNullException cuando el argumento sea NULL.</Description>
+   <Resolution Name="Default">En el método {0} visible externamente, valide el parámetro '{1}' antes de usarlo.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182182.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500">
+   <Name>Los nombres de las variables no deben coincidir con los nombres de los campos</Name>
+   <Description>El campo de instancia y los nombres de variables no deben ser idénticos dentro del mismo ámbito.</Description>
+   <Resolution Name="Parameter">{0}, un parámetro declarado en {1}, tiene el mismo nombre que el campo de instancia en el tipo. Cambie el nombre de uno de estos elementos.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182216.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="maintainabilityrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Categoría</String>
+  <String Key="Certainty">Certeza</String>
+  <String Key="CollapseAll">Contraer todo</String>
+  <String Key="CheckId">Comprobar id.</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">errores</String>
+  <String Key="ExpandAll">Expandir todo</String>
+  <String Key="Help">Ayuda</String>
+  <String Key="Line">Línea</String>
+  <String Key="Messages">mensajes</String>
+  <String Key="LocationNotStoredInPdb">[Ubicación no almacenada en Pdb]</String>
+  <String Key="Project">Proyecto</String>
+  <String Key="Resolution">Resolución</String>
+  <String Key="Rule">Regla</String>
+  <String Key="RuleFile">Archivo de regla</String>
+  <String Key="RuleDescription">Descripción de la regla</String>
+  <String Key="Source">Origen</String>
+  <String Key="Status">Estado</String>
+  <String Key="Target">Círculos concéntricos</String>
+  <String Key="Warning">Advertencia</String>
+  <String Key="Warnings">advertencias</String>
+  <String Key="ReportTitle">Informe de análisis del código</String>
+ </Localized>
+</FxCopReport>
